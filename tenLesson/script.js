@@ -1,7 +1,7 @@
 
 const count=(str,ind)=>str.split(ind).length-1;
 const powX=(x,n)=>Math.pow(Math.round(x),Math.round(n));
-const checkingComb=(str,comb)=>str.toLowerCase().indexOf(comb.toLowerCase())>0;
+const checkingComb=(str,comb)=>!!~str.toLowerCase().indexOf(comb.toLowerCase());
 
 
 //console.log(count(`we are future developers`,`e`));
