@@ -12,7 +12,7 @@ const modifyArr=(arr,el,newEl)=>{
   let outputArr= arr.map(function(val){
     return (val===el)?newEl:val;
   });
-  if(arr.length == outputArr.length && arr.every((v,i)=>v === outputArr[i])){
+  if(arr.join('').length == outputArr.join('').length && arr.every((v,i)=>v === outputArr[i])){
     return `element ${el} not found in array ${arr}`;
   }else{
     return outputArr;
