@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> a0b0f45d24965dfb35f3c217caec5244bf66232b
 const isInArray=(arr,el)=>{
   return arr.some(function(val,index){
     return val===el;
@@ -13,7 +16,11 @@ const modifyArr=(arr,el,newEl)=>{
   let outputArr= arr.map(function(val){
     return (val===el)?newEl:val;
   });
+<<<<<<< HEAD
   if(arr.length == outputArr.length && arr.every((v,i)=>v === outputArr[i])){
+=======
+  if(arr.join('').length == outputArr.join('').length && arr.every((v,i)=>v === outputArr[i])){
+>>>>>>> a0b0f45d24965dfb35f3c217caec5244bf66232b
     return `element ${el} not found in array ${arr}`;
   }else{
     return outputArr;
@@ -32,4 +39,8 @@ const transformString=(str, el, newEl)=>{
   }
 }
 console.log(transformString('my sUrNaMes is Ivanov','SURNAMES', 'name') );
+<<<<<<< HEAD
 console.log(transformString('naMe is Alex, name', 'name','coolName'));
+=======
+console.log(transformString('naMe is Alex, name', 'name','coolName'));
+>>>>>>> a0b0f45d24965dfb35f3c217caec5244bf66232b
